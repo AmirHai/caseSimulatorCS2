@@ -8,6 +8,8 @@ from SkinDialog import SkinInventoryDialog
 
 
 class CaseButtonWidget(QWidget):
+    item_sold = pyqtSignal()
+
     def __init__(self, info_data, info_key, button_width, button_height, font, parent=None):
         super().__init__()
 
@@ -39,7 +41,7 @@ class CaseButtonWidget(QWidget):
         self.iconLbl.setFixedSize(icon_size, icon_size)
         self.iconLbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        img_path = ''
+        img_path = f'images/cases/{info_data['case']}'
         pixmap = QPixmap(img_path)
         if not pixmap.isNull():
             self.iconLbl.setPixmap(pixmap.scaled(
@@ -60,10 +62,14 @@ class CaseButtonWidget(QWidget):
         self.layout.addWidget(self.text_label, stretch=1)
         self.setLayout(self.layout)
 
+    def sell_item_pressed(self):
+        self.item_sold.emit()
+
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.LeftButton:
             self.scrollingWindow = ScrollingSkinsWidget(self.info_data, self.info_key)
             self.scrollingWindow.show()
+            self.scrollingWindow.item_sold.connect(self.sell_item_pressed)
             super().mousePressEvent(event)
 
 

@@ -1,4 +1,4 @@
-from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtCore import Qt, QSize, pyqtSignal
 from PyQt6.QtGui import QPixmap
 
 from AllConstants import *
@@ -8,6 +8,8 @@ from PyQt6.QtWidgets import QWidget, QPushButton, QGridLayout, QSpacerItem, QSiz
 
 
 class CasesWindow(QWidget):
+    item_sold = pyqtSignal()
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Cases')
@@ -69,10 +71,13 @@ class CasesWindow(QWidget):
             font=BTNFONT,
             parent=self
         )
+        case_btn.item_sold.connect(self.sell_item_pressed)
 
         self.list_with_buttons.append(case_btn)
         needed_scroll.addWidget(case_btn, pos[0], pos[1])
 
+    def sell_item_pressed(self):
+        self.item_sold.emit()
 
     def add_cases(self):
         self.Allcollections = get_info_from_json('collections.json')

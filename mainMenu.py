@@ -73,10 +73,10 @@ class MainMenu(QWidget):
         self.profile_name_lbl.setText(self.player_info[1])
         self.money_lbl.setText(f"Money: {self.player_info[2]:.2f}$")
 
-
     def case_btn_clicked(self):
         self.case_window = CasesWindow()
         self.case_window.show()
+        self.case_window.item_sold.connect(self.set_texts_to_profile)
 
     def inventory_btn_clicked(self):
         self.inventory_window = InventoryWidget()
