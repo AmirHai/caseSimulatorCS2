@@ -66,12 +66,12 @@ class CasesWindow(QWidget):
             info_key=info,
             button_width=button_width,
             button_height=button_height,
-            font=BTNFONT
+            font=BTNFONT,
+            parent=self
         )
 
         self.list_with_buttons.append(case_btn)
         needed_scroll.addWidget(case_btn, pos[0], pos[1])
-        print(self.Allcollections[info]['case'])
 
 
     def add_cases(self):

@@ -2,16 +2,19 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel
 from PyQt6.QtCore import QSize, Qt
 from PyQt6.QtGui import QPixmap
 
+from scrollingSkinsWidget import ScrollingSkinsWidget
+
 
 class CaseButtonWidget(QWidget):
     def __init__(self, info_data, info_key, button_width, button_height, font, parent=None):
-        super().__init__(parent)
+        super().__init__()
 
         self.info_data = info_data
         self.info_key = info_key
         self.button_width = button_width
         self.button_height = button_height
         self.font = font
+        self.parent = parent
 
         self.setFixedSize(self.button_width, self.button_height)
 
@@ -58,7 +61,6 @@ class CaseButtonWidget(QWidget):
 
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.LeftButton:
-            main_window = self.window()
-            if hasattr(main_window, 'on_button_click'):
-                main_window.on_button_click(self.info_key)
+            self.scrollingWindow = ScrollingSkinsWidget(self.info_data, self.info_key)
+            self.scrollingWindow.show()
             super().mousePressEvent(event)

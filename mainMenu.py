@@ -2,7 +2,7 @@ from PyQt6.QtCore import Qt
 
 from AllConstants import *
 from PyQt6.QtWidgets import QWidget, QPushButton, QGridLayout, QSpacerItem, QSizePolicy, QLabel
-from casesWindow import CaseSelectionWindow, CasesWindow
+from casesWindow import CasesWindow
 
 
 class MainMenu(QWidget):
