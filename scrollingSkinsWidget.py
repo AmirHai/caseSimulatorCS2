@@ -183,9 +183,20 @@ class ScrollingSkinsWidget(QWidget):
         self.droppedSkinDialog = SkinDropDialog(skin_name, self.droppedSkin[1], '')
         if self.droppedSkinDialog.exec() == QDialog.DialogCode.Accepted:
             if self.droppedSkinDialog.user_choice == "sell":
-                print("Логика: открываем окно продажи скина или начисляем баланс.")
+                sell_item(skin_name)
             elif self.droppedSkinDialog.user_choice == "save":
-                print("Логика: добавляем скин в инвентарь игрока.")
+                self.add_item_into_inventory(skin_name)
+
+    def add_item_into_inventory(self, skin_full_name):
+        player_id = get_player_id()
+        skin_name = self.droppedSkin[0]
+        skin_lft = self.droppedSkin[1]
+        skin_st = self.droppedSkin[2]
+        skin_rarity = self.skinsInfo[skin_name]['rarity'][0]
+        cost = get_info_from_json('prices.json')[skin_full_name]
+
+        add_skin_into_inventory(player_id, skin_name, skin_lft, skin_rarity, skin_st, cost)
+
 
     def randomizeItems(self, droppedSkin=False):
         # rare - 1:7992, epic - 7993:9590, leg - 9591:9910, tai - 9911:9974, knife - 9975:9999
