@@ -1,7 +1,10 @@
+import os.path
 import random
+
+from PyQt6.QtMultimedia import QSoundEffect
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QScrollArea, QPushButton, QLabel, \
     QGridLayout, QSizePolicy, QFrame, QMessageBox, QDialog
-from PyQt6.QtCore import Qt, QPropertyAnimation, QEasingCurve
+from PyQt6.QtCore import Qt, QPropertyAnimation, QEasingCurve, QUrl
 from PyQt6.QtGui import QFont, QPixmap
 from SkinDialog import SkinDropDialog
 
@@ -137,12 +140,12 @@ class ScrollingSkinsWidget(QWidget):
         self.ScrollingArea.horizontalScrollBar().setValue(0)
 
         item_width = int(WINDOWSIZE[0] * 0.15)
-        self.winning_index = random.randint(30, 35)
+        self.winning_index = random.randint(60, 65)
         self.droppedSkin = self.randomizeItems(True)
         print(self.droppedSkin)
 
         self.tape_skins = []
-        for i in range(40):
+        for i in range(70):
             if i != self.winning_index:
                 selectedSkin = self.randomizeItems(False)
             else:
@@ -164,15 +167,26 @@ class ScrollingSkinsWidget(QWidget):
         target_value += random.randint(-int(item_width * 0.3), int(item_width * 0.3))
 
         self.animation = QPropertyAnimation(self.ScrollingArea.horizontalScrollBar(), b"value")
-        self.animation.setDuration(4500)  # Время анимации (4.5 секунды)
+        self.animation.setDuration(6000)  # Время анимации (4.5 секунды)
         self.animation.setStartValue(0)
         self.animation.setEndValue(target_value)
         self.animation.setEasingCurve(QEasingCurve.Type.OutCubic)
 
+        self.caseSound = QSoundEffect()
+        self.caseSound.setSource(QUrl.fromLocalFile(os.path.abspath('soundEffects/go-new-gambling.wav')))
+        self.caseSound.setVolume(0.5)
+
+        self.itemDroppedSound = QSoundEffect()
+        self.itemDroppedSound.setSource(QUrl.fromLocalFile(os.path.abspath('soundEffects/gambling.wav')))
+        self.itemDroppedSound.setVolume(0.5)
+
         self.animation.finished.connect(lambda: self.animation_finished())
+        self.caseSound.play()
         self.animation.start()
 
     def animation_finished(self):
+        self.caseSound.stop()
+        self.itemDroppedSound.play()
         self.openCaseBtn.setEnabled(True)
         skin_name = ''
         if self.droppedSkin[2]:

@@ -39,6 +39,7 @@ class SkinDropDialog(QDialog):
         # 3. Название скина
         name_label = QLabel(skin_name)
         name_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        name_label.setWordWrap(True)
         name_label.setFont(QFont("Arial", 12, QFont.Weight.Bold))
         main_layout.addWidget(name_label)
 
