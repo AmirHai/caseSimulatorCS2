@@ -1,4 +1,7 @@
+import json
 import sqlite3
+
+from AllConstants import get_info_from_json
 
 
 def create_db():
@@ -29,6 +32,13 @@ def add_player(name, money):
     db.commit()
     db.close()
 
+def check_skin():
+    file = open(f'newskins.json', 'r', encoding='utf-8')
+    skins = json.load(file)
+    file.close()
 
-create_db()
-add_player(name="AmirHa1", money=0)
+    for i in skins:
+        if 'Doppler' in i:
+            print(i)
+
+check_skin()

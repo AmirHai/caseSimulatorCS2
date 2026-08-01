@@ -9,6 +9,7 @@ from PyQt6.QtGui import QFont, QPixmap, QIcon
 from SkinDialog import SkinDropDialog
 
 from AllConstants import *
+from randomizer import randomizeItemsA
 from styles import case_skin_style, scrolling_skin_style
 
 
@@ -155,12 +156,12 @@ class ScrollingSkinsWidget(QWidget):
 
         item_width = int(WINDOWSIZE[0] * 0.15)
         self.winning_index = random.randint(60, 65)
-        self.droppedSkin = self.randomizeItems(True)
+        self.droppedSkin = randomizeItemsA(self.key, True)
 
         self.tape_skins = []
         for i in range(70):
             if i != self.winning_index:
-                selectedSkin = self.randomizeItems(False)
+                selectedSkin = randomizeItemsA(self.key, False)
             else:
                 selectedSkin = self.droppedSkin
             color = self.skinsInfo[selectedSkin[0]]['rarity'][0]
@@ -230,6 +231,7 @@ class ScrollingSkinsWidget(QWidget):
         add_skin_into_inventory(player_id, skin_name, skin_lft, skin_rarity, skin_st, cost)
 
     def randomizeItems(self, droppedSkin=False):
+        randomizeItemsA(self.key)
         # rare - 1:7992, epic - 7993:9590, leg - 9591:9910, tai - 9911:9974, knife - 9975:9999
 
         # comm - 1:800000, uncom 800001:960000, rare - 960001:992000,

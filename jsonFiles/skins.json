@@ -2793,7 +2793,7 @@
         ],
         "stattrak": true
     },
-    "★ Bayonet | Doppler": {
+    "★ Bayonet | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -2804,7 +2804,95 @@
         ],
         "stattrak": true
     },
-    "★ Bayonet | Gamma Doppler": {
+    "★ Bayonet | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -2830,6 +2918,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bayonet | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -6676,7 +6786,51 @@
         ],
         "stattrak": true
     },
-    "Glock-18 | Gamma Doppler": {
+    "Glock-18 | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.5
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": false
+    },
+    "Glock-18 | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.5
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": false
+    },
+    "Glock-18 | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.5
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": false
+    },
+    "Glock-18 | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.5
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": false
+    },
+    "Glock-18 | Gamma Doppler Phase4": {
         "float": [
             0,
             0.5
@@ -7622,7 +7776,7 @@
         ],
         "stattrak": true
     },
-    "★ Butterfly Knife | Doppler": {
+    "★ Butterfly Knife | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -7633,7 +7787,95 @@
         ],
         "stattrak": true
     },
-    "★ Butterfly Knife | Gamma Doppler": {
+    "★ Butterfly Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -7659,6 +7901,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Butterfly Knife | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -7886,7 +8150,51 @@
         ],
         "stattrak": true
     },
-    "★ Survival Knife | Doppler": {
+    "★ Survival Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Survival Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Survival Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Survival Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Survival Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -7898,6 +8206,28 @@
         "stattrak": true
     },
     "★ Survival Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Survival Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Survival Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -8084,7 +8414,51 @@
         ],
         "stattrak": true
     },
-    "★ Paracord Knife | Doppler": {
+    "★ Paracord Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Paracord Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Paracord Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Paracord Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Paracord Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -8096,6 +8470,28 @@
         "stattrak": true
     },
     "★ Paracord Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Paracord Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Paracord Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -8414,7 +8810,7 @@
         ],
         "stattrak": true
     },
-    "★ Falchion Knife | Doppler": {
+    "★ Falchion Knife | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -8425,7 +8821,95 @@
         ],
         "stattrak": true
     },
-    "★ Falchion Knife | Gamma Doppler": {
+    "★ Falchion Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -8451,6 +8935,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Falchion Knife | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -8678,7 +9184,7 @@
         ],
         "stattrak": true
     },
-    "★ Flip Knife | Doppler": {
+    "★ Flip Knife | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -8689,7 +9195,95 @@
         ],
         "stattrak": true
     },
-    "★ Flip Knife | Gamma Doppler": {
+    "★ Flip Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -8715,6 +9309,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Flip Knife | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -8942,7 +9558,7 @@
         ],
         "stattrak": true
     },
-    "★ Gut Knife | Doppler": {
+    "★ Gut Knife | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -8953,7 +9569,95 @@
         ],
         "stattrak": true
     },
-    "★ Gut Knife | Gamma Doppler": {
+    "★ Gut Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -8979,6 +9683,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Gut Knife | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -9206,7 +9932,51 @@
         ],
         "stattrak": true
     },
-    "★ Navaja Knife | Doppler": {
+    "★ Navaja Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Navaja Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Navaja Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Navaja Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Navaja Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -9218,6 +9988,28 @@
         "stattrak": true
     },
     "★ Navaja Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Navaja Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Navaja Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -9404,7 +10196,7 @@
         ],
         "stattrak": true
     },
-    "★ Karambit | Doppler": {
+    "★ Karambit | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -9415,7 +10207,95 @@
         ],
         "stattrak": true
     },
-    "★ Karambit | Gamma Doppler": {
+    "★ Karambit | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -9441,6 +10321,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Karambit | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -9800,7 +10702,7 @@
         ],
         "stattrak": true
     },
-    "★ M9 Bayonet | Doppler": {
+    "★ M9 Bayonet | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -9811,7 +10713,95 @@
         ],
         "stattrak": true
     },
-    "★ M9 Bayonet | Gamma Doppler": {
+    "★ M9 Bayonet | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -9837,6 +10827,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ M9 Bayonet | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -10064,7 +11076,51 @@
         ],
         "stattrak": true
     },
-    "★ Nomad Knife | Doppler": {
+    "★ Nomad Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Nomad Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Nomad Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Nomad Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Nomad Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -10076,6 +11132,28 @@
         "stattrak": true
     },
     "★ Nomad Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Nomad Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Nomad Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -10262,7 +11340,7 @@
         ],
         "stattrak": true
     },
-    "★ Shadow Daggers | Doppler": {
+    "★ Shadow Daggers | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -10273,7 +11351,95 @@
         ],
         "stattrak": true
     },
-    "★ Shadow Daggers | Gamma Doppler": {
+    "★ Shadow Daggers | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -10299,6 +11465,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Shadow Daggers | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -10526,7 +11714,51 @@
         ],
         "stattrak": true
     },
-    "★ Skeleton Knife | Doppler": {
+    "★ Skeleton Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Skeleton Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Skeleton Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Skeleton Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Skeleton Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -10538,6 +11770,28 @@
         "stattrak": true
     },
     "★ Skeleton Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Skeleton Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Skeleton Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -10724,7 +11978,51 @@
         ],
         "stattrak": true
     },
-    "★ Stiletto Knife | Doppler": {
+    "★ Stiletto Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Stiletto Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Stiletto Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Stiletto Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Stiletto Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -10736,6 +12034,28 @@
         "stattrak": true
     },
     "★ Stiletto Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Stiletto Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Stiletto Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -10922,7 +12242,7 @@
         ],
         "stattrak": true
     },
-    "★ Bowie Knife | Doppler": {
+    "★ Bowie Knife | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -10933,7 +12253,95 @@
         ],
         "stattrak": true
     },
-    "★ Bowie Knife | Gamma Doppler": {
+    "★ Bowie Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -10959,6 +12367,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Bowie Knife | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -11186,7 +12616,7 @@
         ],
         "stattrak": true
     },
-    "★ Huntsman Knife | Doppler": {
+    "★ Huntsman Knife | Doppler Blackpearl": {
         "float": [
             0,
             0.08
@@ -11197,7 +12627,95 @@
         ],
         "stattrak": true
     },
-    "★ Huntsman Knife | Gamma Doppler": {
+    "★ Huntsman Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Doppler Phase4": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Gamma Doppler Emerald": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Gamma Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Gamma Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Gamma Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Gamma Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -11223,6 +12741,28 @@
         "float": [
             0,
             0.48
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Huntsman Knife | Doppler Sapphire": {
+        "float": [
+            0,
+            0.08
         ],
         "rarity": [
             "#eb4b4b",
@@ -11450,7 +12990,51 @@
         ],
         "stattrak": true
     },
-    "★ Ursus Knife | Doppler": {
+    "★ Ursus Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Ursus Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Ursus Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Ursus Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Ursus Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -11462,6 +13046,28 @@
         "stattrak": true
     },
     "★ Ursus Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Ursus Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Ursus Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
@@ -11648,7 +13254,51 @@
         ],
         "stattrak": true
     },
-    "★ Talon Knife | Doppler": {
+    "★ Talon Knife | Doppler Blackpearl": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Talon Knife | Doppler Phase1": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Talon Knife | Doppler Phase2": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Talon Knife | Doppler Phase3": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Talon Knife | Doppler Phase4": {
         "float": [
             0,
             0.08
@@ -11660,6 +13310,28 @@
         "stattrak": true
     },
     "★ Talon Knife | Marble Fade": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Talon Knife | Doppler Ruby": {
+        "float": [
+            0,
+            0.08
+        ],
+        "rarity": [
+            "#eb4b4b",
+            "rarity_ancient_weapon"
+        ],
+        "stattrak": true
+    },
+    "★ Talon Knife | Doppler Sapphire": {
         "float": [
             0,
             0.08
