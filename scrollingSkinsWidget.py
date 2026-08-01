@@ -4,11 +4,12 @@ import random
 from PyQt6.QtMultimedia import QSoundEffect
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QScrollArea, QPushButton, QLabel, \
     QGridLayout, QSizePolicy, QFrame, QMessageBox, QDialog
-from PyQt6.QtCore import Qt, QPropertyAnimation, QEasingCurve, QUrl, pyqtSignal
-from PyQt6.QtGui import QFont, QPixmap
+from PyQt6.QtCore import Qt, QPropertyAnimation, QEasingCurve, QUrl, pyqtSignal, QSize
+from PyQt6.QtGui import QFont, QPixmap, QIcon
 from SkinDialog import SkinDropDialog
 
 from AllConstants import *
+from styles import case_skin_style, scrolling_skin_style
 
 
 class SpinItemWidget(QWidget):
@@ -20,9 +21,9 @@ class SpinItemWidget(QWidget):
 
         self.iconLbl = QLabel()
         icon_size = item_size
-        self.iconLbl.setFixedSize(icon_size, icon_size)
+        self.iconLbl.setFixedSize(icon_size, int(WINDOWSIZE[0] *  0.18))
         self.iconLbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.iconLbl.setStyleSheet(f''' background-color: {color}; ''')
+        self.iconLbl.setStyleSheet(scrolling_skin_style(color))
 
         img_path = img_info
         pixmap = QPixmap(img_path)
@@ -35,6 +36,13 @@ class SpinItemWidget(QWidget):
         self.Vlayout.addWidget(self.iconLbl)
 
         self.textLbl = QLabel()
+        self.textLbl.setStyleSheet("""
+                    color: #ffffff; 
+                    background: transparent; 
+                    border: none; 
+                    margin: 0px; 
+                    padding: 0px;
+                """)
         self.textLbl.setFixedSize(icon_size, int(icon_size * 0.2))
         self.textLbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.textLbl.setFont(NAMEFONT)
@@ -60,6 +68,11 @@ class ScrollingSkinsWidget(QWidget):
         self.layout = QVBoxLayout(self)
         self.layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
+        self.pointer = QLabel("▼", self)
+        self.pointer.setStyleSheet("color: #eb4b4b; font-size: 16px; margin-top: -10px;")
+        self.pointer.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.layout.addWidget(self.pointer)
+
         self.ScrollingArea = QScrollArea()
         self.ScrollingArea.setWidgetResizable(True)
         self.ScrollingArea.setFixedSize(int(WINDOWSIZE[0] *  0.8), int(WINDOWSIZE[0] *  0.2))
@@ -74,11 +87,6 @@ class ScrollingSkinsWidget(QWidget):
 
         self.ScrollingArea.setWidget(self.tape_widget)
         self.layout.addWidget(self.ScrollingArea, alignment=Qt.AlignmentFlag.AlignCenter)
-
-        self.pointer = QLabel("▼", self)
-        self.pointer.setStyleSheet("color: #eb4b4b; font-size: 16px; margin-top: -10px;")
-        self.pointer.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.layout.addWidget(self.pointer)
 
         self.openCaseBtn = QPushButton('Open Case')
         self.openCaseBtn.setFixedSize(int(WINDOWSIZE[0] * 0.2), int(WINDOWSIZE[1] * 0.1))
@@ -110,8 +118,12 @@ class ScrollingSkinsWidget(QWidget):
 
         for skin in self.data['skins']:
             btn_skin = QPushButton()
-            btn_skin.setStyleSheet(f'background-color: {self.skinsInfo[skin]['rarity'][0]};')
+            btn_skin.setStyleSheet(case_skin_style(self.skinsInfo[skin]['rarity'][0]))
             btn_skin.setFixedSize(skinIconSize, skinIconSize)
+
+            img_path = f'images/skins/{replace_symbols(skin)}'
+            btn_skin.setIcon(QIcon(img_path))
+            btn_skin.setIconSize(QSize(skinIconSize, skinIconSize))
 
             self.gridWithItems.addWidget(btn_skin, pos_y, pos_x)
             pos_x += 1
@@ -144,7 +156,6 @@ class ScrollingSkinsWidget(QWidget):
         item_width = int(WINDOWSIZE[0] * 0.15)
         self.winning_index = random.randint(60, 65)
         self.droppedSkin = self.randomizeItems(True)
-        print(self.droppedSkin)
 
         self.tape_skins = []
         for i in range(70):
@@ -157,7 +168,7 @@ class ScrollingSkinsWidget(QWidget):
             if '★' in name:
                 name = 'rare_item'
                 color = '#e4ae39'
-            newItem = SpinItemWidget(item_width, '', color, name)
+            newItem = SpinItemWidget(item_width, f'images/skins/{replace_symbols(name)}', color, name)
             self.tape_skins.append(newItem)
             self.tape_layout.addWidget(newItem)
             self.tape_skins.append(newItem)
@@ -196,7 +207,11 @@ class ScrollingSkinsWidget(QWidget):
         skin_name += self.droppedSkin[0]
         skin_name += give_skin_floatname(self.droppedSkin[1])
 
-        self.droppedSkinDialog = SkinDropDialog(skin_name, self.droppedSkin[1], '')
+        self.clear_tape()
+
+        self.droppedSkinDialog = SkinDropDialog(skin_name,
+                                                self.droppedSkin[1],self.skinsInfo[self.droppedSkin[0]]['rarity'][0],
+                                                f'images/skins/{replace_symbols(self.droppedSkin[0])}')
         if self.droppedSkinDialog.exec() == QDialog.DialogCode.Accepted:
             if self.droppedSkinDialog.user_choice == "sell":
                 sell_item(skin_name)

@@ -5,6 +5,7 @@ from PyQt6.QtGui import QPixmap
 from AllConstants import BTNFONT, get_info_from_json, sell_item, sell_skin_from_inventory
 from scrollingSkinsWidget import ScrollingSkinsWidget
 from SkinDialog import SkinInventoryDialog
+from styles import *
 
 
 class CaseButtonWidget(QWidget):
@@ -76,7 +77,7 @@ class CaseButtonWidget(QWidget):
 class SkinButtonWidget(QWidget):
     inventory_changed = pyqtSignal()
 
-    def __init__(self, skin_name, float_data, button_size, skin_id, parent=None):
+    def __init__(self, skin_name, skin_short_name, float_data, button_size, skin_id, img, parent=None):
         super().__init__()
 
         self.skin_name = skin_name
@@ -85,6 +86,7 @@ class SkinButtonWidget(QWidget):
         self.skin_id = skin_id
         self.parent = parent
 
+        self.skin_rarity_color = get_info_from_json('skins.json')[skin_short_name]['rarity'][0]
 
         self.setFixedSize(self.button_size, self.button_size)
 
@@ -107,10 +109,11 @@ class SkinButtonWidget(QWidget):
         self.iconLbl.setFixedSize(icon_size, icon_size)
         self.iconLbl.setFixedSize(icon_size, icon_size)
         self.iconLbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        #self.iconLbl.setStyleSheet("background: transparent;")
+        self.iconLbl.setMouseTracking(True)
+        self.iconLbl.setStyleSheet(set_inventory_skin_style(self.skin_rarity_color))
 
-        img_path = ''
-        pixmap = QPixmap(img_path)
+        self.img_path = img
+        pixmap = QPixmap(self.img_path)
         if not pixmap.isNull():
             self.iconLbl.setPixmap(pixmap.scaled(
                 icon_size, icon_size,
@@ -132,7 +135,7 @@ class SkinButtonWidget(QWidget):
 
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.LeftButton:
-            self.scrollingWindow = SkinInventoryDialog(self.skin_name, self.float_data, '')
+            self.scrollingWindow = SkinInventoryDialog(self.skin_name, self.float_data, self.img_path)
             if self.scrollingWindow.exec() == QDialog.DialogCode.Accepted:
                 if self.scrollingWindow.user_choice == "sell":
                     sell_skin_from_inventory(self.skin_id, self.skin_name)

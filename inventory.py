@@ -77,8 +77,8 @@ class InventoryWidget(QWidget):
             if skin[5]:
                 skin_full_name = 'StatTrak™ ' + skin_full_name
             skin_full_name += give_skin_floatname(skin[3])
-
-            newWidget = SkinButtonWidget(skin_full_name, skin[3], WINDOWSIZE[0] // 5, skin[0])
+            img = f'images/skins/{replace_symbols(skin[2])}'
+            newWidget = SkinButtonWidget(skin_full_name, skin[2], skin[3], WINDOWSIZE[0] // 5, skin[0], img)
             newWidget.inventory_changed.connect(self.skin_was_sold)
 
             self.grid_with_skins.addWidget(newWidget, pos_y, pos_x)

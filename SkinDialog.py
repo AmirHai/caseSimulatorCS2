@@ -3,10 +3,11 @@ from PyQt6.QtWidgets import QApplication, QDialog, QVBoxLayout, QHBoxLayout, QLa
 from PyQt6.QtGui import QPixmap, QFont
 from PyQt6.QtCore import Qt, pyqtSignal
 from AllConstants import *
+from styles import dropped_skin_style, red_button_style, green_button_style
 
 
 class SkinDropDialog(QDialog):
-    def __init__(self, skin_name, float_value, image_path):
+    def __init__(self, skin_name, float_value, rarity, image_path):
         super().__init__()
 
         # Настройки главного окна
@@ -15,6 +16,7 @@ class SkinDropDialog(QDialog):
         # Убираем кнопку закрытия "?" и оставляем окно поверх остальных
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowType.WindowContextHelpButtonHint)
 
+        self.setStyleSheet(dropped_skin_style(rarity))
         # Главный вертикальный лейаут
         main_layout = QVBoxLayout()
         main_layout.setSpacing(15)
@@ -22,13 +24,14 @@ class SkinDropDialog(QDialog):
         # 1. Заголовок
         title_label = QLabel("New Item Obtained!")
         title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title_label.setFont(QFont("Arial", 16, QFont.Weight.Bold))
-        title_label.setStyleSheet("color: #FFD700;")  # Золотистый цвет
+        title_label.setFont(QFont("Arial", 20, QFont.Weight.Bold))
+        title_label.setStyleSheet("color: #FFFFFF;")  # Золотистый цвет
         main_layout.addWidget(title_label)
 
         # 2. Фотография скина
         self.image_label = QLabel()
         self.image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.image_label.setStyleSheet("background: transparent; border: none;")
         pixmap = QPixmap(image_path)
         # Масштабируем картинку под размер окна с сохранением пропорций
         scaled_pixmap = pixmap.scaled(250, 250, Qt.AspectRatioMode.KeepAspectRatio,
@@ -53,11 +56,11 @@ class SkinDropDialog(QDialog):
         buttons_layout = QHBoxLayout()
 
         self.sell_button = QPushButton("Продать")
-        self.sell_button.setStyleSheet("background-color: #d9534f; color: white; padding: 10px; font-weight: bold;")
+        self.sell_button.setStyleSheet(red_button_style())
         self.sell_button.clicked.connect(self.on_sell_clicked)
 
         self.save_button = QPushButton("Сохранить")
-        self.save_button.setStyleSheet("background-color: #5cb85c; color: white; padding: 10px; font-weight: bold;")
+        self.save_button.setStyleSheet(green_button_style())
         self.save_button.clicked.connect(self.on_save_clicked)
 
         buttons_layout.addWidget(self.sell_button)

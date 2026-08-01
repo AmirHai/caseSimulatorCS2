@@ -96,3 +96,6 @@ def load_info_about_skins(player_id):
     cursor = db.cursor()
     cursor.execute(''' SELECT * FROM skins WHERE player_id = ? ''', (int(player_id),))
     return cursor.fetchall()
+
+def replace_symbols(name):
+    return name.replace(' ', '').replace('|', '').replace('★', '')
