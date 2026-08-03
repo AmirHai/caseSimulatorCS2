@@ -22,21 +22,33 @@ def random_float(skinname, flt):
         return random.uniform(0, 1)
 
 
-def sorting_changes(min_price=0, max_price=1000000):
+def sorting_changes(min_price=0, max_price=1000000, name=''):
     all_skins = get_info_from_json('prices.json')
     all_list = [[i, all_skins[i]] for i in all_skins]
     ret_list = []
     for skin in all_list:
         if min_price <= skin[1] <= max_price:
-            ret_list.append(skin)
+            if name == '':
+                ret_list.append(skin)
+            else:
+                spl_names = name.split(' ')
+                b = True
+                for n in spl_names:
+                    if n.lower() not in skin[0].lower():
+                        b = False
+                        break
+                if b:
+                    ret_list.append(skin)
     return ret_list
 
-def sort_skin_by_cost(skins, min_price=0, max_price=1000000):
+def sort_skin_by_cost(skins, min_price=0, max_price=1000000, name=''):
     ret_skins = []
     for skin in skins:
         if min_price <= skin[-1] <= max_price:
-            ret_skins.append(skin)
+            if name.lower() in skin[2].lower() or name == '':
+                ret_skins.append(skin)
     return ret_skins
+
 
 
 class SkinsScroll(QWidget):
@@ -74,11 +86,12 @@ class SkinsScroll(QWidget):
             if widget is not None:
                 widget.setParent(None)
 
-    def download_skins_from_inventory(self, min_price=0, max_price=1000000):
+    def download_skins_from_inventory(self, min_price=0, max_price=1000000, name=''):
         self.clear_grid_layout()
         self.upgrading_skin = None
         self.all_skins = load_info_about_skins(get_player_id())
-        self.all_skins = sort_skin_by_cost(self.all_skins, min_price, max_price)
+        self.all_skins = sort_skin_by_cost(self.all_skins, min_price, max_price, name)
+        self.all_skins.sort(key=lambda x: x[-1], reverse=True)
         pos_x = 0
         pos_y = 0
         for skin in self.all_skins:
@@ -99,16 +112,16 @@ class SkinsScroll(QWidget):
         self.upgrading_skin = info
         self.item_selected.emit()
 
-    def download_skin_variants(self, min_price=0, max_price=1000000):
+    def download_skin_variants(self, min_price=0, max_price=1000000, name=''):
         self.clear_grid_layout()
-        self.all_skins = sorting_changes(min_price, max_price)
+        self.all_skins = sorting_changes(min_price, max_price, name)
         self.all_skins.sort(key=lambda x: x[1], reverse=True)
         pos_x = 0
         pos_y = 0
         self.saved_skins.clear()
 
         for ind, skin in enumerate(self.all_skins):
-            if ind <= 30:
+            if ind <= 50:
                 skin_short_name = get_short_name(skin[0])
                 float_range = random_float(skin_short_name, get_flt_from_name(skin[0]))
 

@@ -52,6 +52,11 @@ class SkinDropDialog(QDialog):
         float_label.setFont(QFont("Courier New", 12))  # Моноширинный шрифт для цифр
         main_layout.addWidget(float_label)
 
+        cost_label = QLabel(f"Cost: {get_info_from_json('prices.json')[skin_name]:.2f}$")
+        cost_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        cost_label.setFont(QFont("Courier New", 12))  # Моноширинный шрифт для цифр
+        main_layout.addWidget(cost_label)
+
         # 5. Блок с кнопками (горизонтальный лейаут)
         buttons_layout = QHBoxLayout()
 

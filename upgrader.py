@@ -166,6 +166,7 @@ class Upgrader(QWidget):
         self.upgrader_search_ledit.setPlaceholderText("Search")
         self.upgrader_search_ledit.setFont(create_Font(12, True))
         self.upgrader_search_ledit.setMinimumHeight(40)
+        self.upgrader_search_ledit.textChanged.connect(self.upgrading_ledit_changed)
         self.upgraderWidgets.addWidget(self.upgrader_search_ledit)
 
         self.upgraderMinMaxBtn = QPushButton("")
@@ -357,6 +358,7 @@ class Upgrader(QWidget):
     def upgrading_ledit_changed(self):
         cost_min = self.upgrader_min_cost_ledit.text()
         cost_max = self.upgrader_max_cost_ledit.text()
+        name = ''
         if cost_min is None or not is_float(cost_min):
             cost_min = 0
         else:
@@ -365,7 +367,9 @@ class Upgrader(QWidget):
             cost_max = 1000000
         else:
             cost_max = float(cost_max)
-        self.skinVariants.download_skin_variants(cost_min, cost_max)
+        if self.upgrader_search_ledit.text() is not None:
+            name = str(self.upgrader_search_ledit.text())
+        self.skinVariants.download_skin_variants(cost_min, cost_max, name)
 
     def upgrade_btn_clicked(self):
         for btn in self.disableBtns:
@@ -375,12 +379,16 @@ class Upgrader(QWidget):
             invent_cost = self.inventory_skin_info[6]
             upgraded_cost = self.upgraded_skin_info[2]
             chance = round((invent_cost / upgraded_cost) * 100, 2)
-            delete_item(self.inventory_skin_info[0])
-            if chance >= dropped_chance:
-                inf = self.upgraded_skin_info
-                add_skin_into_inventory(get_player_id(), inf[0], inf[3], inf[5], inf[4], inf[2])
-            self.roulette.start_animation(180 * (dropped_chance / 100), chance >= dropped_chance)
-            self.inventory_skin_info = None
+            if chance < 75:
+                delete_item(self.inventory_skin_info[0])
+                if chance >= dropped_chance:
+                    inf = self.upgraded_skin_info
+                    add_skin_into_inventory(get_player_id(), inf[0], inf[3], inf[5], inf[4], inf[2])
+                self.roulette.start_animation(180 * (dropped_chance / 100), chance >= dropped_chance)
+                self.inventory_skin_info = None
+            else:
+                for btn in self.disableBtns:
+                    btn.setEnabled(True)
 
     def animation_ended_event(self):
         for btn in self.disableBtns:
