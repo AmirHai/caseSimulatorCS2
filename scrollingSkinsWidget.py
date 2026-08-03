@@ -67,17 +67,17 @@ class ScrollingSkinsWidget(QWidget):
 
     def create_window(self):
         self.layout = QVBoxLayout(self)
-        self.layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.pointer = QLabel("▼", self)
         self.pointer.setStyleSheet("color: #eb4b4b; font-size: 16px; margin-top: -10px;")
         self.pointer.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.layout.addWidget(self.pointer)
+        self.layout.addWidget(self.pointer, stretch=1)
 
         self.ScrollingArea = QScrollArea()
         self.ScrollingArea.setWidgetResizable(True)
-        self.ScrollingArea.setFixedSize(int(WINDOWSIZE[0] *  0.8), int(WINDOWSIZE[0] *  0.2))
-        self.ScrollingArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)  # Прячем скроллбар
+        self.ScrollingArea.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        #self.ScrollingArea.setFixedSize(int(WINDOWSIZE[0] *  0.8), int(WINDOWSIZE[0] *  0.2))
+        self.ScrollingArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff) # Прячем скроллбар
         self.ScrollingArea.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.ScrollingArea.setStyleSheet("border: 2px solid #3d3d3d; background-color: #252525;")
 
@@ -87,10 +87,10 @@ class ScrollingSkinsWidget(QWidget):
         self.tape_layout.setSpacing(0)
 
         self.ScrollingArea.setWidget(self.tape_widget)
-        self.layout.addWidget(self.ScrollingArea, alignment=Qt.AlignmentFlag.AlignCenter)
+        self.layout.addWidget(self.ScrollingArea, stretch=4)
 
         self.openCaseBtn = QPushButton('Open Case')
-        self.openCaseBtn.setFixedSize(int(WINDOWSIZE[0] * 0.2), int(WINDOWSIZE[1] * 0.1))
+        #self.openCaseBtn.setFixedSize(int(WINDOWSIZE[0] * 0.2), int(WINDOWSIZE[1] * 0.1))
         self.openCaseBtn.setStyleSheet("""
                    QPushButton { background-color: #087800; color: black; font-weight: bold; border-radius: 15px; border: 3px solid #000000; }
                    QPushButton:hover { background-color: #065700; }
@@ -98,7 +98,8 @@ class ScrollingSkinsWidget(QWidget):
                """)
         self.openCaseBtn.setFont(BTNFONT)
         self.openCaseBtn.clicked.connect(self.open_btn_pressed)
-        self.layout.addWidget(self.openCaseBtn, alignment=Qt.AlignmentFlag.AlignCenter)
+        self.openCaseBtn.setMinimumSize(200, 50)
+        self.layout.addWidget(self.openCaseBtn, alignment=Qt.AlignmentFlag.AlignCenter, stretch=1)
 
         self.gridWithItems = QGridLayout()
         self.gridWithItems.setSpacing(10)
@@ -139,7 +140,7 @@ class ScrollingSkinsWidget(QWidget):
 
             self.gridWithItems.addWidget(btn_skin, pos_y, pos_x)
 
-        self.layout.addWidget(self.gridScroll)
+        self.layout.addWidget(self.gridScroll, stretch=10)
 
     def clear_tape(self):
         """Очищает верхнюю ленту от старых виджетов перед новым прокрутом"""
@@ -202,11 +203,7 @@ class ScrollingSkinsWidget(QWidget):
         self.caseSound.stop()
         self.itemDroppedSound.play()
         self.openCaseBtn.setEnabled(True)
-        skin_name = ''
-        if self.droppedSkin[2]:
-            skin_name += 'StatTrak™ '
-        skin_name += self.droppedSkin[0]
-        skin_name += give_skin_floatname(self.droppedSkin[1])
+        skin_name = get_full_name(self.droppedSkin[0], self.droppedSkin[1], self.droppedSkin[2])
 
         self.clear_tape()
 

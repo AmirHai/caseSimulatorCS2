@@ -73,12 +73,10 @@ class InventoryWidget(QWidget):
         allSkins = load_info_about_skins(get_player_id())
         pos_x, pos_y = 0, 0
         for skin in allSkins:
-            skin_full_name = skin[2]
-            if skin[5]:
-                skin_full_name = 'StatTrak™ ' + skin_full_name
-            skin_full_name += give_skin_floatname(skin[3])
+            skin_full_name = get_full_name(skin[2], skin[3], skin[5])
+
             img = f'images/skins/{replace_symbols(skin[2])}'
-            newWidget = SkinButtonWidget(skin_full_name, skin[2], skin[3], WINDOWSIZE[0] // 5, skin[0], img)
+            newWidget = SkinButtonWidget(skin_full_name, skin[2], skin[3], WINDOWSIZE[0] // 5 - 15, skin[0], img)
             newWidget.inventory_changed.connect(self.skin_was_sold)
 
             self.grid_with_skins.addWidget(newWidget, pos_y, pos_x)

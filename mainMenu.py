@@ -4,6 +4,7 @@ from AllConstants import *
 from PyQt6.QtWidgets import QWidget, QPushButton, QGridLayout, QSpacerItem, QSizePolicy, QLabel
 from casesWindow import CasesWindow
 from inventory import InventoryWidget
+from upgrader import Upgrader
 
 
 class MainMenu(QWidget):
@@ -51,6 +52,12 @@ class MainMenu(QWidget):
         self.main_grid_layout.addWidget(self.inventory_btn, placer, 0, 1, 1)
         placer += 1
 
+        self.upgreider_btn = QPushButton()
+        self.upgreider_btn.setText("Upgrade skins")
+        self.upgreider_btn.setFont(BTNFONT)
+        self.upgreider_btn.clicked.connect(self.upgreider_btn_clicked)
+        self.main_grid_layout.addWidget(self.upgreider_btn, placer, 0, 1, 1)
+        placer += 1
 
         self.profile_btn = QPushButton()
         self.profile_btn.setText("Profile")
@@ -82,3 +89,7 @@ class MainMenu(QWidget):
         self.inventory_window = InventoryWidget()
         self.inventory_window.player_money_changed.connect(self.set_texts_to_profile)
         self.inventory_window.show()
+
+    def upgreider_btn_clicked(self):
+        self.upgrade_skin = Upgrader()
+        self.upgrade_skin.show()

@@ -41,4 +41,56 @@ def check_skin():
         if 'Doppler' in i:
             print(i)
 
-check_skin()
+def clear_prices():
+    collectPrices = {}
+    skinPrices = {}
+    file = open(f'prices.json', 'r', encoding='utf-8')
+    prices = json.load(file)
+    file.close()
+    for i in prices:
+        if '(' not in i:
+            if '★' not in i:
+                collectPrices[i] = prices[i]
+            else:
+                skinPrices[i] = prices[i]
+        else:
+            ind = i.index('(')
+            fls = ['(Battle-Scarred)', '(Factory New)', '(Field-Tested)', '(Minimal Wear)', '(Well-Worn)']
+            b = False
+            for j in fls:
+                if j in i:
+                    b = True
+            if b:
+                skinPrices[i] = prices[i]
+
+    new = open('prices.json', 'w', encoding='utf-8')
+    json.dump(skinPrices, new)
+    new.close()
+
+def printf():
+    file = open(f'prices.json', 'r', encoding='utf-8')
+    prices = json.load(file)
+    file.close()
+    for i in prices:
+        if '★' in i:
+            print(i)
+
+def print_skin():
+    file = open(f'prices.json', 'r', encoding='utf-8')
+    skins = json.load(file)
+    file.close()
+    newdata = {}
+    for i in skins:
+        if 'BlackPearl' in i:
+            name = list(i)
+            name[i.rindex('P')] = 'p'
+            newdata[''.join(name)] = skins[i]
+        else:
+            newdata[i] = skins[i]
+    with open('prices.json', 'w', encoding='utf-8') as f:
+        json.dump(newdata, f)
+
+
+
+
+

@@ -37,7 +37,6 @@ def randomizeItemsA(collection, droppedSkin=False):
 
     drop = random.uniform(0, sum(chances))
     droppedRarity = None
-    print(sum(chances))
 
     for i in range(len(chances)):
         drop -= chances[i]
@@ -61,8 +60,12 @@ def randomizeItemsA(collection, droppedSkin=False):
     stattrak = False
     if skins[neededSkin]['stattrak']:
         stattrak = random.randint(1, 10) == 5
+
     float_range = skins[neededSkin]["float"]
+    if float_range == -1:
+        float_range = [0, 1]
     skin_float = random.uniform(float_range[0], float_range[1])
+
     return neededSkin, skin_float, stattrak
 
 def getDopplersPhase(skin_name):

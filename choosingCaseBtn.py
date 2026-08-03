@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QDialog
 from PyQt6.QtCore import QSize, Qt, pyqtSignal
 from PyQt6.QtGui import QPixmap
 
-from AllConstants import BTNFONT, get_info_from_json, sell_item, sell_skin_from_inventory
+from AllConstants import BTNFONT, get_info_from_json, sell_item, sell_skin_from_inventory, create_Font
 from scrollingSkinsWidget import ScrollingSkinsWidget
 from SkinDialog import SkinInventoryDialog
 from styles import *
@@ -107,7 +107,6 @@ class SkinButtonWidget(QWidget):
         self.iconLbl = QLabel()
         icon_size = int(self.button_size * 0.7)
         self.iconLbl.setFixedSize(icon_size, icon_size)
-        self.iconLbl.setFixedSize(icon_size, icon_size)
         self.iconLbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.iconLbl.setMouseTracking(True)
         self.iconLbl.setStyleSheet(set_inventory_skin_style(self.skin_rarity_color))
@@ -125,7 +124,7 @@ class SkinButtonWidget(QWidget):
 
         self.text_label = QLabel()
         self.text_label.setText(skin_name)
-        self.text_label.setFont(BTNFONT)
+        self.text_label.setFont(create_Font(button_size // 15, True))
         self.text_label.setWordWrap(True)
         self.text_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.text_label.setStyleSheet("color: white; background: transparent;")
@@ -144,3 +143,11 @@ class SkinButtonWidget(QWidget):
                     pass
 
             super().mousePressEvent(event)
+
+
+class SkinButtonUpgraderWidget(SkinButtonWidget):
+    item_selected = pyqtSignal()
+    def mousePressEvent(self, event):
+        if event.button() == Qt.MouseButton.LeftButton:
+            self.item_selected.emit()
+
